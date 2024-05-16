@@ -44,6 +44,7 @@ async def start_round(key):
     if key == "space":
         player1.hide()
         player2.hide()
+        countdown.words = "3"
         countdown.show()
         await play.timer(seconds=1.0)
         countdown.words = "2"
